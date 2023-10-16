@@ -1,0 +1,22 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.recent-posts-container {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+}
+
+img {
+	width: 100%;
+}
+
+@media (min-width: 500px) {
+	.recent-posts-container {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto;
+	}
+}
