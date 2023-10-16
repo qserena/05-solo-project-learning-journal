@@ -1,7 +1,7 @@
-import { getArticlePreview } from "./data.js"
+import { getArticlePreview } from './data.js'
 
-const heroEl = document.getElementById("hero")
-const recentPostsContainer = document.getElementById("recent-posts-container")
+const heroContainer = document.getElementById('hero-container')
+const recentPostsEl = document.getElementById('recent-posts')
 
 function getArticle() {
 	return `
@@ -24,5 +24,7 @@ function getPosts() {
 	return html
 }
 
-heroEl.innerHTML = getArticle()
-recentPostsContainer.innerHTML = getPosts()
+console.log(heroContainer)
+
+heroContainer.innerHTML = getArticle()
+recentPostsEl.innerHTML = getPosts()
