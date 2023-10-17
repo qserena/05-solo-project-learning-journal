@@ -20,7 +20,7 @@ function getPosts() {
 		html += `
 	        <div class="recent-post">
 	            <img src="./img/blog-image-0${i + 1}.png"/>
-				<p class="date">OCT 17, 2023<p/>
+				<p class="date">OCT 17, 2023</p>
 				<h3>Blog ${blogNumbers[i]}</h3>
 				<p>${getPostText()}</p>
 	        </div>
