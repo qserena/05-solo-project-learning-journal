@@ -3,50 +3,125 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Source Sans Pro', sans-serif;
+	box-sizing: border-box;
 }
 
-header {
-	background-color: #fff;
+.container {
+	margin: 0 1.25em;
+}
+
+/* Typography*/
+
+h1 {
+	font-size: 2.18rem; /* 34.838px */
+}
+
+h2 {
+	font-size: 2rem; /* 32px */
+}
+
+.hero h2 {
+	margin: 0.25em 0;
+}
+
+h3 {
+	font-size: 1.5rem; /* 24px */
+}
+
+/* Header */
+
+.header-container {
+	height: 59px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.site-logo-and-name {
+.logo-and-blog-name {
 	display: flex;
-	justify-content: center;
+	justify-content: start;
 	align-items: center;
+	gap: 3px;
 }
 
 .logo {
-	width: 1.72em;
-	height: 1.72em;
+	width: 1.71em;
+	height: 1.71em; /* 23.16 / 13.55px */
 }
 
-.site-name {
+.blog-name {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
+	font-size: 0.85rem; /* 13.55px */
+	letter-spacing: -0.407px;
 }
 
 .menu {
 	display: flex;
 	justify-content: end;
+	align-items: center;
+	gap: 20px;
 }
+
+.menu li {
+	list-style: none;
+}
+
+.menu a {
+	font-size: 0.75rem;
+	font-weight: 600;
+	color: #090909;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+/* Hero */
 
 .hero {
-	background-image: url('./img/article-image-hero.png');
+	color: #ffffff;
+	background-image: url('/img/article-image-hero.png');
+	height: 293px;
+	background-size: cover;
+	padding-top: 1px;
 }
 
-.container {
-	margin: 0 3em;
+.hero-container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
 }
+
+.article-date-hero {
+	font-size: 0.75rem; /* 12px */
+	font-weight: 400;
+	line-height: normal;
+	margin: 0.67em 0;
+}
+
+.article-preview-hero {
+	font-weight: 400;
+	margin-top: 0.5em; /* 8px */
+	margin-bottom: 1.5625em; /* 25px */
+}
+
+/* Recent posts */
 
 .recent-posts {
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: auto;
 	gap: 1.625em;
+}
+
+.recent-post {
+	margin-top: 34px;
+	margin-bottom: 7px;
+}
+
+.date {
+	font-size: 0.89rem;
 }
 
 img {
