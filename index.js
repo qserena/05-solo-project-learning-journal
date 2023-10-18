@@ -7,7 +7,7 @@ function getArticlePreview() {
 	return `
 		<div class="article-preview" id="article-preview">
 			<p class="article-date-hero">OCT 17, 2023</p>
-			<h2>My new journey as a bootcamp student.</h2>
+			<h1>My new journey as a bootcamp student.</h1>
 			<p class="article-preview-hero">${getArticlePreviewText()}</p>
 		</div>
 	`
@@ -21,7 +21,7 @@ function getPosts() {
 	        <div class="recent-post">
 	            <img src="./img/blog-image-0${i + 1}.png"/>
 				<p class="date">OCT 17, 2023</p>
-				<h3>Blog ${blogNumbers[i]}</h3>
+				<h2>Blog ${blogNumbers[i]}</h2>
 				<p>${getPostText()}</p>
 	        </div>
 	    `
