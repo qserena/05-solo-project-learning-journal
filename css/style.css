@@ -2,6 +2,8 @@ html,
 body {
 	margin: 0;
 	padding: 0;
+	background: #fff;
+	color: #141414;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 16px;
 	box-sizing: border-box;
@@ -27,6 +29,10 @@ h2 {
 }
 
 /* Header */
+
+header {
+	background: #fff;
+}
 
 .header-container {
 	height: 59px;
@@ -105,6 +111,14 @@ h2 {
 	margin-bottom: 1.5625em; /* 25px */
 }
 
+/* About me */
+
+.profile-image {
+	width: 182px;
+	height: 182px;
+	border-radius: 50%;
+}
+
 /* Recent posts */
 
 .recent-posts {
@@ -169,6 +183,10 @@ footer {
 }
 
 @media (min-width: 500px) {
+	body {
+		background: #fafafa;
+	}
+
 	/* Typography*/
 
 	h1 {

@@ -1,7 +1,41 @@
-import { getArticlePreviewText, getPostText } from './data.js'
+import { getArticlePreviewText, getArticleLast, getPostText } from './data.js'
 
+const heroSection = document.getElementById('hero')
 const heroContainer = document.getElementById('hero-container')
+const fullArticleSection = document.getElementById('full-article')
+const aboutSection = document.getElementById('about-section')
 const recentPostsEl = document.getElementById('recent-posts')
+
+document.addEventListener('click', function (e) {
+	if (e.target.id === 'home') {
+		handleHomeClick()
+	} else if (e.target.id === 'about') {
+		handleAboutClick()
+	} else if (
+		e.target.id === 'hero-container' ||
+		e.target.parentElement.id === 'article-preview'
+	) {
+		handleHeroClick()
+	}
+})
+
+function handleHomeClick() {
+	heroSection.style.display = 'block'
+	fullArticleSection.style.display = 'none'
+	aboutSection.style.display = 'none'
+}
+
+function handleAboutClick() {
+	heroSection.style.display = 'none'
+	fullArticleSection.style.display = 'none'
+	aboutSection.style.display = 'block'
+}
+
+function handleHeroClick() {
+	heroSection.style.display = 'none'
+	fullArticleSection.style.display = 'block'
+	aboutSection.style.display = 'none'
+}
 
 function getArticlePreview() {
 	return `
@@ -10,6 +44,23 @@ function getArticlePreview() {
 			<h1>My new journey as a bootcamp student.</h1>
 			<p class="article-preview-hero">${getArticlePreviewText()}</p>
 		</div>
+	`
+}
+
+function getFullArticle() {
+	return `
+		${getArticlePreview()}
+		<img src="./img/article-image-hero.png"/>
+		${getArticleLast()}
+	`
+}
+
+function getAboutHtml() {
+	return `
+		<img class="profile-image" src="./img/profile-image.png"/>
+		<h1>Hi there! My name is Roku and welcome to my learning journal.</h1>
+		<p class="article-preview-hero">${getArticlePreviewText()}</p>
+		${getArticleLast()}
 	`
 }
 
@@ -30,4 +81,8 @@ function getPosts() {
 }
 
 heroContainer.innerHTML = getArticlePreview()
+fullArticleSection.innerHTML = getFullArticle()
+aboutSection.innerHTML = getAboutHtml()
 recentPostsEl.innerHTML = getPosts()
+
+handleHomeClick()
