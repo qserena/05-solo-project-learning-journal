@@ -61,9 +61,13 @@ function getFullArticle() {
 
 function getAboutHtml() {
 	return `
-		<img class="profile-image" src="./img/profile-image.png"/>
-		<h1>Hi there! My name is Roku and welcome to my learning journal.</h1>
-		<p class="article-preview-hero">${getArticlePreviewText()}</p>
+		<div class="initial-presentation">
+			<img class="profile-image" src="./img/profile-image.png"/>
+			<div class="initial-presentation-text">
+				<h1>Hi there! My name is Roku and welcome to my learning journal.</h1>
+				<p class="article-preview-hero">${getArticlePreviewText()}</p>
+			</div>
+		</div>
 		<div class="inner-container">
 			${getArticleLast()}
 		</div>

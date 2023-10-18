@@ -13,10 +13,6 @@ body {
 	margin: 0 1.25em; /* 20px */
 }
 
-.inner-container {
-	margin: 0;
-}
-
 /* Typography*/
 
 h1 {
@@ -192,11 +188,7 @@ footer {
 	}
 
 	.container {
-		margin: 0 3.3125em; /* 53px */
-	}
-
-	.inner-container {
-		margin: 0 67px;
+		margin: 0 2em; /* 32px */
 	}
 
 	/* Typography*/
@@ -234,6 +226,35 @@ footer {
 	.article-date-hero {
 		font-size: 1rem; /* 16px */
 	}
+
+	/* Recent Posts */
+
+	.recent-posts {
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 1.625em; /* 26px/16px*/
+	}
+}
+
+@media (min-width: 800px) {
+	.container {
+		margin: 0 3.3125em; /* 53px */
+	}
+
+	.inner-container {
+		margin: 0 67px;
+	}
+
+	/* About Me */
+
+	.initial-presentation {
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+		align-items: center;
+		gap: 2em;
+	}
+
+	/* Recent Posts */
 
 	.recent-posts {
 		grid-template-columns: repeat(3, 1fr);
