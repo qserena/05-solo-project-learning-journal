@@ -10,7 +10,11 @@ body {
 }
 
 .container {
-	margin: 0 1.25em;
+	margin: 0 1.25em; /* 20px */
+}
+
+.inner-container {
+	margin: 0;
 }
 
 /* Typography*/
@@ -185,6 +189,14 @@ footer {
 @media (min-width: 500px) {
 	body {
 		background: #fafafa;
+	}
+
+	.container {
+		margin: 0 3.3125em; /* 53px */
+	}
+
+	.inner-container {
+		margin: 0 67px;
 	}
 
 	/* Typography*/

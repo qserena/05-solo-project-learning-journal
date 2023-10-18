@@ -49,9 +49,13 @@ function getArticlePreview() {
 
 function getFullArticle() {
 	return `
-		${getArticlePreview()}
-		<img src="./img/article-image-hero.png"/>
-		${getArticleLast()}
+		<div class="inner-container">
+			${getArticlePreview()}
+		</div>
+			<img src="./img/article-image-hero.png"/>
+		<div class="inner-container">
+			${getArticleLast()}
+		</div>
 	`
 }
 
@@ -60,7 +64,9 @@ function getAboutHtml() {
 		<img class="profile-image" src="./img/profile-image.png"/>
 		<h1>Hi there! My name is Roku and welcome to my learning journal.</h1>
 		<p class="article-preview-hero">${getArticlePreviewText()}</p>
-		${getArticleLast()}
+		<div class="inner-container">
+			${getArticleLast()}
+		</div>
 	`
 }
 
