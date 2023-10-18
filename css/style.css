@@ -28,6 +28,10 @@ h2 {
 	margin: 0.375em 0; /* 9px */
 }
 
+h3 {
+	font-size: 1rem;
+}
+
 /* Header */
 
 header {
@@ -113,10 +117,21 @@ header {
 
 /* About me */
 
+.initial-presentation {
+	margin-top: 1.6em; /* ca 26px */
+	margin-bottom: 1.6em; /* ca 26px */
+}
+
 .profile-image {
 	width: 182px;
 	height: 182px;
 	border-radius: 50%;
+}
+
+.recent-posts-header {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 0;
 }
 
 /* Recent posts */
@@ -197,6 +212,10 @@ footer {
 		font-size: 2.5rem; /* 40px */
 	}
 
+	h3 {
+		font-size: 1.5rem;
+	}
+
 	/* Header */
 
 	.logo {
@@ -227,6 +246,17 @@ footer {
 		font-size: 1rem; /* 16px */
 	}
 
+	/* About Me */
+
+	.about-section {
+		margin-top: 1em;
+	}
+
+	.initial-presentation {
+		margin-top: 2em;
+		margin-bottom: 3em;
+	}
+
 	/* Recent Posts */
 
 	.recent-posts {
@@ -246,12 +276,18 @@ footer {
 
 	/* About Me */
 
+	.about-section {
+		margin-top: 1em;
+	}
+
 	.initial-presentation {
 		display: flex;
 		flex-direction: row;
 		justify-content: start;
 		align-items: center;
 		gap: 2em;
+		margin-top: 4em;
+		margin-bottom: 2em;
 	}
 
 	/* Recent Posts */

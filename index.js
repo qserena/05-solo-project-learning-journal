@@ -90,9 +90,13 @@ function getPosts() {
 	return html
 }
 
+function getRecentPostsHeader() {
+	return `<h3 class="recent-posts-header">Recent posts</h3>`
+}
+
 heroContainer.innerHTML = getArticlePreview()
-fullArticleSection.innerHTML = getFullArticle()
-aboutSection.innerHTML = getAboutHtml()
+fullArticleSection.innerHTML = getFullArticle() + getRecentPostsHeader()
+aboutSection.innerHTML = getAboutHtml() + getRecentPostsHeader()
 recentPostsEl.innerHTML = getPosts()
 
 handleHomeClick()
