@@ -40,7 +40,7 @@ function handleHeroClick() {
 function getArticlePreview() {
 	return `
 		<div class="article-preview" id="article-preview">
-			<p class="article-date-hero">OCT 17, 2023</p>
+			<p class="article-date-hero">OCT 18, 2023</p>
 			<h1>My new journey as a bootcamp student.</h1>
 			<p class="article-preview-hero">${getArticlePreviewText()}</p>
 		</div>
